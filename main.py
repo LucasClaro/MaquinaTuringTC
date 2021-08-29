@@ -43,7 +43,7 @@ def LerEntrada():
 def Simular(fitaEntrada):
     #A sequência de entrada está na pos 1 da fita para que exista um - na pos 0
     #Dessa forma fica fácil de fazer a agulha voltar para o início da fita sem estourar o limite do vetor 
-    fita = "-" + fitaEntrada + "-" * 50
+    fita = "-" + fitaEntrada + "-" * (99 - len(fitaEntrada))
     estadoAtual = 1
     posAgulha = 1
 
